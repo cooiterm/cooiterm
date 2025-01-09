@@ -147,6 +147,7 @@ local function tnoclip()
 end
 
 player.CharacterAdded:Connect(function(newCharacter)
+    local on = false
     character = newCharacter
     humanoidRootPart = character:WaitForChild("HumanoidRootPart")
     stop()
